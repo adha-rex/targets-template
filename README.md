@@ -3,15 +3,16 @@
 
 # Targets pipeline
 
-This project is a targets pipeline. It was made using a template. The
-template can be loaded using the following code:
+This project is a targets pipeline. It was made using a
+[template](https://github.com/adha-rex/targets-template). The template
+can be loaded using the following code:
 
 ``` r
 pkgs <- c("devtools", "gh", "withr")
 install.packages(setdiff(pkgs, rownames(installed.packages()))) 
 
 devtools::source_gist("b71dcebcc9638fcdce1ea3f442221903")
-get_mhr_forecasting_release("PROJECT_NAME")
+create_targets_project("PROJECT_NAME")
 ```
 
 This project uses a [`{targets}`](https://books.ropensci.org/targets/)
