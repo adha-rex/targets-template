@@ -9,6 +9,7 @@ suppressPackageStartupMessages({
   library(tibble)
   library(tidyr)
   library(tidyselect)
+  library(usethis)
 })
 
 

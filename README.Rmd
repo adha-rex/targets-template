@@ -11,31 +11,25 @@ knitr::opts_chunk$set(
 )
 ```
 
-# Targets pipeline
+# Targets pipeline v0.1.2
 
 This project is a targets pipeline. It was made using a [template](https://github.com/adha-rex/targets-template).
 The template can be loaded using the following code:
 
 
 ```{r, eval=FALSE}
-pkgs <- c("devtools", "gh", "withr")
-install.packages(setdiff(pkgs, rownames(installed.packages()))) 
-
-devtools::source_gist("b71dcebcc9638fcdce1ea3f442221903")
-create_targets_project("PROJECT_NAME")
+source("https://tinyurl.com/get-project")
+get_project(
+  project_dir = "YOUR_NEW_PROJECT_DIR" # includes project name and doesn't currently exist i.e. "Projects/mhr-pathology-pipeline"
+  repo = "targets-pipeline"
+)
 ```
 
+To get started with the new project and add it to GitHub, open the project and run the following code:
 
-This project uses a [`{targets}`](https://books.ropensci.org/targets/) workflow:
-
-
-## `{targets}` workflow
-
-```{r, include=FALSE, message=FALSE, warning=FALSE}
-wf <- c("```mermaid", targets::tar_mermaid(targets_only = TRUE), "```")
+```{r, eval=FALSE}
+renv::restore()
+usethis::use_git()
+usethis::use_github(visibility = "private")
 ```
 
-
-```{r, results = "asis", echo = FALSE}
-cat(wf, sep = "\n")
-```
