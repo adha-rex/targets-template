@@ -11,7 +11,7 @@ can be loaded using the following code:
 source("https://tinyurl.com/get-project")
 get_project(
   project_dir = "YOUR_NEW_PROJECT_DIR" # includes project name and doesn't currently exist i.e. "Projects/mhr-pathology-pipeline"
-  repo = "targets-pipeline"
+  repo = "targets-template"
 )
 ```
 
