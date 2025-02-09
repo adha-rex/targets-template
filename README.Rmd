@@ -30,6 +30,6 @@ To get started with the new project and add it to GitHub, open the project and r
 ```{r, eval=FALSE}
 renv::restore()
 usethis::use_git()
-usethis::use_github(visibility = "private")
+usethis::use_github(private = TRUE)
 ```
 

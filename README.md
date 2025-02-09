@@ -21,5 +21,5 @@ project and run the following code:
 ``` r
 renv::restore()
 usethis::use_git()
-usethis::use_github(visibility = "private")
+usethis::use_github(private = TRUE)
 ```
