@@ -1,9 +1,11 @@
 suppressPackageStartupMessages({
   library(crew)
   library(dplyr)
+  library(ggplot2)
   library(glue)
   library(lubridate)
   library(purrr)
+  library(stringr)
   library(targets)
   library(tarchetypes)
   library(tibble)
